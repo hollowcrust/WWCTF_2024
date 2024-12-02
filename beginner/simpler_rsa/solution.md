@@ -1,6 +1,6 @@
-# SimpleRSA
+# Simpler RSA
 
-We are given an RSA algorithm implementation in `chall.py` and the values of `p`, `q` and `c` in `out.txt` as follows:<br/>
+We are given an RSA algorithm implementation in `chall.py` and the values of $p$, $q$ and $c$ in `out.txt` as follows:<br/>
 
 ### chall.py
 ```Python3
@@ -24,7 +24,7 @@ c=428168135751934386923526802965783298510480260185788985183366282477007360127972
 ```
 <br/>
 
-Normally, the public key used in RSA is a product of 2 prime numbers. In `chall.py`, a prime number `q` is used as the public key instead. We can then find the private key by calculating $d \equiv p^{-1} \pmod{\phi(q)}$ where $\phi (q) = q - 1$. We then find the original message `m` by calculating $m \equiv c^{d} \pmod{q}$ and convert it to bytes.
+Normally, the public key used in RSA is a product of 2 prime numbers. In `chall.py`, a prime number $q$ is used as the public key instead. We can then find the private key by calculating $d \equiv p^{-1} \pmod{\phi(q)}$ where $\phi (q) = q - 1$. We then find the original message $q$ by calculating $m \equiv c^{d} \pmod{q}$ and convert it to bytes.
 
 ### Solve script
 ```Python3
